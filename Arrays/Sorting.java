@@ -23,5 +23,6 @@ public class Sorting {
             System.out.print(arr[right++] + " ");
             System.out.print(arr[left--] + " ");
         }
+        System.out.println(arr.length%2 == 0 ? arr[arr.length-1] : "");
     }
 }
