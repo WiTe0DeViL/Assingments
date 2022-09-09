@@ -14,9 +14,10 @@ public class Sorting {
     }
 
     public static void main(String[] args) {
-//        int[] arr = Inputarray();
-        int arr[] = {1, 2, 3, 4, 5, 6, 7};
-        int mid = arr.length / 2, left = mid - 1, right = mid + 1;
+       int[] arr = Inputarray();
+//         int arr[] = {1, 2, 3, 4, 5, 6, 7};
+        int mid = arr.length%2 == 0 ?  arr.length / 2 : (arr.length/2)-1 ;
+        int left = mid - 1, right = mid + 1;
         System.out.print(arr[mid]+" ");
         while (left > -1 && right < arr.length) {
             System.out.print(arr[right++] + " ");
